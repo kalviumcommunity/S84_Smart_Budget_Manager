@@ -34,7 +34,7 @@ Backend:-
 
 2. MongoDB: For storing user data, income, expenses, and budgets.Ideal for dynamic applications with changing data structures.
 
-3. Mongoose: For defining database schemas.Define schemas for MongoDB collections (e.g., users, budgets, expenses).
+3. Mongoose: For defining database schemas.Define schemas for MongoDB collections (e.g.: users, budgets, expenses).
 
 Testing Tools:
 
