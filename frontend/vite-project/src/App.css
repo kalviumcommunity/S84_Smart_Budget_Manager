@@ -1,0 +1,143 @@
+:root {
+  --primary-color: #4f9aff;
+  --secondary-color: #9a6bff;
+  --background: #0f1115;
+  --card-bg: #1a1c22;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --positive: #10b981;
+  --negative: #ef4444;
+  --border-radius: 16px;
+  --shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  --font: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+.dashboard {
+  padding: 40px 60px;
+}
+
+.dashboard-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.card-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: var(--border-radius);
+  flex: 1;
+  min-width: 220px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.amount {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.change {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.positive {
+  color: var(--positive);
+}
+
+.negative {
+  color: var(--negative);
+}
+
+.bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.chart-box {
+  background: rgba(26, 28, 34, 0.85);
+  backdrop-filter: blur(6px);
+  border-radius: var(--border-radius);
+  padding: 24px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.chart-box h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.income,
+.expenses {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.income {
+  color: var(--primary-color);
+}
+
+.expenses {
+  color: var(--secondary-color);
+}
+
+.balance {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.down {
+  font-size: 14px;
+  color: var(--negative);
+  margin-left: 6px;
+}
+
+.chart-wrapper {
+  height: 260px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .card-row,
+  .bottom-row {
+    flex-direction: column;
+  }
+
+  .dashboard {
+    padding: 24px;
+  }
+}
